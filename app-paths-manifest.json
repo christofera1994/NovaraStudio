@@ -1,0 +1,15 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/admin/(auth)/login/page": "app/admin/(auth)/login/page.js",
+  "/admin/(main)/contact/page": "app/admin/(main)/contact/page.js",
+  "/admin/(main)/features/page": "app/admin/(main)/features/page.js",
+  "/admin/(main)/gallery/page": "app/admin/(main)/gallery/page.js",
+  "/admin/(main)/nav/page": "app/admin/(main)/nav/page.js",
+  "/admin/(main)/page": "app/admin/(main)/page.js",
+  "/admin/(main)/philosophy/page": "app/admin/(main)/philosophy/page.js",
+  "/admin/(main)/pricing/page": "app/admin/(main)/pricing/page.js",
+  "/admin/(main)/protocol/page": "app/admin/(main)/protocol/page.js",
+  "/admin/(main)/settings/page": "app/admin/(main)/settings/page.js",
+  "/api/contact/route": "app/api/contact/route.js",
+  "/page": "app/page.js"
+}
