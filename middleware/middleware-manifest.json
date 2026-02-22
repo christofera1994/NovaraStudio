@@ -1,0 +1,33 @@
+{
+  "sorted_middleware": [],
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge/chunks/Desktop_novara_b4825d2c._.js",
+        "server/edge/chunks/98808_@supabase_auth-js_dist_module_ed601dc4._.js",
+        "server/edge/chunks/98808_34c490a3._.js",
+        "server/edge/chunks/[root-of-the-server]__20b6b504._.js",
+        "server/edge/chunks/turbopack-Desktop_novara_edge-wrapper_7efd4ee4.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "^/.*$",
+          "originalSource": "/:path*"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "Hm/HHee6cx3r5yzELVIVoYgUgVk5uvoUfkaOI7jlQIM=",
+        "__NEXT_PREVIEW_MODE_ID": "ea0774ec816581ed3d102fdad82afefe",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "c55f83c6c286c277c0c583b226c604a6dfa534151a60a77e2ab1799327a8bba9",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "dba8d143274578f5b8205f9273d02f16696a989959fe5e44f60b29a1fe6e5e2f"
+      }
+    }
+  },
+  "instrumentation": null,
+  "functions": {}
+}
