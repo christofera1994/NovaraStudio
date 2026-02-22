@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/lazar/Desktop/novara/app/admin/layout.tsx"],"sourcesContent":["import { ReactNode } from \"react\";\n\nexport default function AdminRootLayout({ children }: { children: ReactNode }) {\n  return (\n    <div className=\"min-h-screen bg-graphite text-ghost\">\n      {children}\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAEe,SAAS,gBAAgB,EAAE,QAAQ,EAA2B;IAC3E,qBACE,mQAAC;QAAI,WAAU;kBACZ;;;;;;AAGP","debugId":null}}]
+}
