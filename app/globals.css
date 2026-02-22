@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+@layer base {
+  :root {
+    /* Matches bg-black-iridescent.png: deep black + chromatic dispersion (blues, purples, magentas, cyans) */
+    --color-primary: #08080a;
+    --color-deep-void: #030305;
+    --color-accent: #38bdf8;
+    --color-plasma: #e879f9;
+    --color-iris-cyan: #22d3ee;
+    --color-iris-violet: #a78bfa;
+    --color-iris-fuchsia: #e879f9;
+    --color-iris-magenta: #f472b6;
+    --color-iridescent: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 20%, #c084fc 40%, #e879f9 60%, #22d3ee 80%, #06b6d4 100%);
+    --color-background: #fafaf9;
+    --color-ghost: #f5f5f4;
+    --color-text-dark: #0a0a0a;
+    --color-graphite: #171717;
+    --color-studio-white: #fafafa;
+    --color-studio-black: #030305;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply antialiased text-graphite bg-background;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Global noise overlay (feTurbulence) - applied via utility */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Magnetic button base */
+.btn-magnetic {
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.btn-magnetic:hover {
+  transform: scale(1.03);
+}
+
+/* Link lift */
+.link-lift {
+  transition: transform 0.2s ease;
+}
+.link-lift:hover {
+  transform: translateY(-1px);
+}
+
+/* Stagger animation classes (GSAP will override) */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(40px);
+}
